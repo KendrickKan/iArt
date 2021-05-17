@@ -15,8 +15,8 @@ class ViewController: UIViewController,UITextFieldDelegate{
 
     var uesrname:String? = nil
     var userpassword:String? = nil
-    let textfield = UITextField(frame: CGRect(x: 40, y: 440, width: 340, height: 38))
-    let textfield1=UITextField(frame: CGRect(x: 40, y: 510, width: 340, height: 38))
+    let textfield = UITextField(frame: CGRect(x: 60, y: 400, width: 300, height: 50))
+    let textfield1=UITextField(frame: CGRect(x: 60, y: 470, width: 300, height: 50))
     
     override func viewDidLoad() {
         
@@ -34,18 +34,22 @@ class ViewController: UIViewController,UITextFieldDelegate{
 //        logo.layer.masksToBounds = true
 //        self.view.addSubview(logo)
         
-        let title = UILabel(frame: CGRect(x: 40, y: 350, width: 340, height: 18))
+        let title = UILabel(frame: CGRect(x: 40, y: 300, width: 340, height: 18))
         title.text="没有一个孩子，会成为一座孤岛"
         title.textAlignment = .center
-        title.font = UIFont.systemFont(ofSize:18)
-        title.textColor = UIColor.white
+        title.font = UIFont.systemFont(ofSize:16)
+        title.textColor = UIColor.lightGray
 
         self.view.addSubview(title)
         //let textfield = UITextField(frame: CGRect(x: 40, y: 440, width: 340, height: 38))
         textfield.borderStyle = .roundedRect
         textfield.placeholder = "电话号码"
+        textfield.textAlignment = .center
         textfield.textColor = UIColor.gray
-        textfield.layer.cornerRadius = 5
+        textfield.backgroundColor = UIColor.clear
+        textfield.layer.borderWidth = 2.0
+        textfield.layer.borderColor = UIColor.white.cgColor
+        textfield.layer.cornerRadius = 25
         textfield.layer.masksToBounds = true
         textfield.clearButtonMode = .always
         textfield.keyboardType = UIKeyboardType.default
@@ -57,8 +61,12 @@ class ViewController: UIViewController,UITextFieldDelegate{
         //let textfield1=UITextField(frame: CGRect(x: 40, y: 510, width: 340, height: 38))
         textfield1.borderStyle = .roundedRect
         textfield1.placeholder = "密码"
+        textfield1.textAlignment = .center
         textfield1.textColor = UIColor.gray
-        textfield1.layer.cornerRadius = 5
+        textfield1.backgroundColor = UIColor.clear
+        textfield1.layer.borderWidth = 2.0
+        textfield1.layer.borderColor = UIColor.white.cgColor
+        textfield1.layer.cornerRadius = 25
         textfield1.layer.masksToBounds = true
         textfield1.clearButtonMode = .always
         textfield1.isSecureTextEntry = true
@@ -68,12 +76,12 @@ class ViewController: UIViewController,UITextFieldDelegate{
         
         self.view.addSubview(textfield1)
 
-        let loginbuttonp = UIButton(frame: CGRect(x: 80, y: 575, width: 100, height: 38))
-        loginbuttonp.backgroundColor = UIColor.systemRed
+        let loginbuttonp = UIButton(frame: CGRect(x: 60, y: 540, width: 300, height: 50))
+        loginbuttonp.backgroundColor = UIColor(red: 173/255, green: 212/255,blue: 209/255, alpha: 1)
         loginbuttonp.setTitle("登陆", for: .normal)
         loginbuttonp.titleLabel?.font = UIFont.init(name: "AmericanTypewriter-Bold", size: 18)
 
-        loginbuttonp.layer.cornerRadius = 5
+        loginbuttonp.layer.cornerRadius = 25
         loginbuttonp.layer.masksToBounds = true
         self.view.addSubview(loginbuttonp)
         loginbuttonp.addTarget(self, action: #selector(anotherp), for: .touchUpInside)
@@ -95,11 +103,11 @@ class ViewController: UIViewController,UITextFieldDelegate{
 //        }
         
         
-        let registerbutton = UIButton(frame: CGRect(x: 240, y: 575, width: 100, height: 38))
-        registerbutton.backgroundColor = UIColor.systemBlue
-        registerbutton.setTitle("注册", for: .normal)
-        registerbutton.titleLabel?.font = UIFont.init(name: "AmericanTypewriter-Bold", size: 18)
-
+        let registerbutton = UIButton(frame: CGRect(x: 60, y: 600, width: 300, height: 38))
+        registerbutton.backgroundColor = UIColor.clear
+        registerbutton.setTitle("账户注册 | 找回密码", for: .normal)
+        registerbutton.titleLabel?.font = UIFont.init(name: "AmericanTypewriter-Bold", size: 16)
+        registerbutton.setTitleColor(UIColor.lightGray, for: .normal)
         registerbutton.layer.cornerRadius = 5
         registerbutton.layer.masksToBounds = true
         self.view.addSubview(registerbutton)
