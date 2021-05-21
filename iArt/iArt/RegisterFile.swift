@@ -14,13 +14,13 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
     
     
     
-    let textfield = UITextField(frame: CGRect(x: 40, y: 180, width: 340, height: 38))
-    let textfield1 = UITextField(frame: CGRect(x: 40, y: 240, width: 340, height: 38))
-    let textfield2 = UITextField(frame: CGRect(x: 40, y: 300, width: 340, height: 38))
-    let textfield5 = UITextField(frame: CGRect(x: 40, y: 360, width: 340, height: 38))
-    let textfield6 = UITextField(frame: CGRect(x: 40, y: 420, width: 340, height: 38))
-    let textfield3 = UITextField(frame: CGRect(x: 40, y: 480, width: 340, height: 38))
-    let textfield4 = UITextField(frame: CGRect(x: 40, y: 540, width: 340, height: 38))
+    let textfield = UITextField(frame: CGRect(x: 60, y: 210, width: 300, height: 50))
+    let textfield1 = UITextField(frame: CGRect(x: 60, y: 280, width: 300, height: 50))
+    let textfield2 = UITextField(frame: CGRect(x: 60, y: 350, width: 300, height: 50))
+    let textfield5 = UITextField(frame: CGRect(x: 60, y: 420, width: 300, height: 50))
+    let textfield6 = UITextField(frame: CGRect(x: 60, y: 490, width: 300, height: 50))
+    let textfield3 = UITextField(frame: CGRect(x: 60, y: 560, width: 300, height: 50))
+    let textfield4 = UITextField(frame: CGRect(x: 60, y: 630, width: 300, height: 50))
 
     override func viewDidLoad() {
         
@@ -45,14 +45,18 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         title.textAlignment = .center
         title.font = UIFont.systemFont(ofSize:18)
         title.textColor = UIColor.white
-
-        self.view.addSubview(title)
+        //self.view.addSubview(title)
+        
         
         //let textfield = UITextField(frame: CGRect(x: 40, y: 180, width: 340, height: 38))
         textfield.borderStyle = .roundedRect
         textfield.placeholder = "电话号码"
+        textfield.textAlignment = .center
         textfield.textColor = UIColor.gray
-        textfield.layer.cornerRadius = 5
+        textfield.backgroundColor = UIColor.clear
+        textfield.layer.borderWidth = 2.0
+        textfield.layer.borderColor = UIColor.white.cgColor
+        textfield.layer.cornerRadius = 25
         textfield.layer.masksToBounds = true
         textfield.clearButtonMode = .always
         textfield.keyboardType = UIKeyboardType.default
@@ -64,8 +68,12 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         
         textfield1.borderStyle = .roundedRect
         textfield1.placeholder = "用户名"
+        textfield1.textAlignment = .center
         textfield1.textColor = UIColor.gray
-        textfield1.layer.cornerRadius = 5
+        textfield1.backgroundColor = UIColor.clear
+        textfield1.layer.borderWidth = 2.0
+        textfield1.layer.borderColor = UIColor.white.cgColor
+        textfield1.layer.cornerRadius = 25
         textfield1.layer.masksToBounds = true
         textfield1.clearButtonMode = .always
         //textfield1.isSecureTextEntry = true
@@ -80,8 +88,12 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         
         textfield2.borderStyle = .roundedRect
         textfield2.placeholder = "请输入你的身份1为孩子2为家长3为医生"
+        textfield2.textAlignment = .center
         textfield2.textColor = UIColor.gray
-        textfield2.layer.cornerRadius = 5
+        textfield2.backgroundColor = UIColor.clear
+        textfield2.layer.borderWidth = 2.0
+        textfield2.layer.borderColor = UIColor.white.cgColor
+        textfield2.layer.cornerRadius = 25
         textfield2.layer.masksToBounds = true
         textfield2.clearButtonMode = .always
         //textfield1.isSecureTextEntry = true
@@ -96,8 +108,12 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         
         textfield5.borderStyle = .roundedRect
         textfield5.placeholder = "请输入年龄"
+        textfield5.textAlignment = .center
         textfield5.textColor = UIColor.gray
-        textfield5.layer.cornerRadius = 5
+        textfield5.backgroundColor = UIColor.clear
+        textfield5.layer.borderWidth = 2.0
+        textfield5.layer.borderColor = UIColor.white.cgColor
+        textfield5.layer.cornerRadius = 25
         textfield5.layer.masksToBounds = true
         textfield5.clearButtonMode = .always
         //textfield1.isSecureTextEntry = true
@@ -112,8 +128,12 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         
         textfield6.borderStyle = .roundedRect
         textfield6.placeholder = "请输入性别1为男，2为女"
+        textfield6.textAlignment = .center
         textfield6.textColor = UIColor.gray
-        textfield6.layer.cornerRadius = 5
+        textfield6.backgroundColor = UIColor.clear
+        textfield6.layer.borderWidth = 2.0
+        textfield6.layer.borderColor = UIColor.white.cgColor
+        textfield6.layer.cornerRadius = 25
         textfield6.layer.masksToBounds = true
         textfield6.clearButtonMode = .always
         //textfield1.isSecureTextEntry = true
@@ -129,8 +149,12 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         
         textfield3.borderStyle = .roundedRect
         textfield3.placeholder = "请输入密码"
+        textfield3.textAlignment = .center
         textfield3.textColor = UIColor.gray
-        textfield3.layer.cornerRadius = 5
+        textfield3.backgroundColor = UIColor.clear
+        textfield3.layer.borderWidth = 2.0
+        textfield3.layer.borderColor = UIColor.white.cgColor
+        textfield3.layer.cornerRadius = 25
         textfield3.layer.masksToBounds = true
         textfield3.clearButtonMode = .always
         textfield3.isSecureTextEntry = true
@@ -145,8 +169,12 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         
         textfield4.borderStyle = .roundedRect
         textfield4.placeholder = "请再次确认密码"
+        textfield4.textAlignment = .center
         textfield4.textColor = UIColor.gray
-        textfield4.layer.cornerRadius = 5
+        textfield4.backgroundColor = UIColor.clear
+        textfield4.layer.borderWidth = 2.0
+        textfield4.layer.borderColor = UIColor.white.cgColor
+        textfield4.layer.cornerRadius = 25
         textfield4.layer.masksToBounds = true
         textfield4.clearButtonMode = .always
         textfield4.isSecureTextEntry = true
@@ -156,12 +184,12 @@ class RegisterFile: UIViewController,UITextFieldDelegate {
         
         self.view.addSubview(textfield4)
         
-        let registerbutton = UIButton(frame: CGRect(x: 120, y: 620, width: 170, height: 38))
-        registerbutton.backgroundColor = UIColor.systemRed
+        let registerbutton = UIButton(frame: CGRect(x: 60, y: 700, width: 300, height: 50))
+        registerbutton.backgroundColor = UIColor(red: 173/255, green: 212/255,blue: 209/255, alpha: 1)
         registerbutton.setTitle("注册", for: .normal)
         registerbutton.titleLabel?.font = UIFont.init(name: "AmericanTypewriter-Bold", size: 18)
 
-        registerbutton.layer.cornerRadius = 5
+        registerbutton.layer.cornerRadius = 25
         registerbutton.layer.masksToBounds = true
         self.view.addSubview(registerbutton)
         

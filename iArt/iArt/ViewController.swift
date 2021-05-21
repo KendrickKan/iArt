@@ -211,7 +211,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
 //            self.navigationController?.pushViewController(con,animated:true)
 //        }
 //        else {
-        
+        if (ifchange == 204 || ifchange == 205){
         let tparams = ["userId":GlobalUserId] as [String : Any]
         HTTP.POST("http://121.41.14.201:8080/iArt/logininterface/get_inf",parameters: tparams,requestSerializer: JSONParameterSerializer()){
             response in
@@ -230,6 +230,8 @@ class ViewController: UIViewController,UITextFieldDelegate{
             GlobalAge = jsondata["age"].int!
             //GlobalAge = jsondata.dictionaryValue["age"] as! Int
             print("GlobalAge:"+String(GlobalAge))
+        }
+            
         }
         
         
