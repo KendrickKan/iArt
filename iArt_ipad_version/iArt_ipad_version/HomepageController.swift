@@ -375,7 +375,7 @@ class HomepageController: UIViewController,UIImagePickerControllerDelegate,UINav
             }
             while lastestpicid == 0{}
             
-            let initialcomment = ["Pic_ID":lastestpicid] as [String :Any]
+        let initialcomment = ["Pic_ID":lastestpicid,"P_Message":"很不错","D_Message":"很好","C_Message":"Very Good"] as [String :Any]
             HTTP.POST("http://121.41.14.201:8080/iArt/doc_pardialogue/initialDia",parameters: initialcomment,requestSerializer: JSONParameterSerializer()){
                 response in
                 if let err = response.error{
@@ -390,6 +390,22 @@ class HomepageController: UIViewController,UIImagePickerControllerDelegate,UINav
 
 
             }
+        
+//        let initialCmoment = ["Pic_ID":lastestpicid,"C_Message":"你画得真不错"] as [String:Any]
+//        HTTP.POST("http://121.41.14.201:8080/iArt/doc_pardialogue/addChiMoments",parameters: initialcomment,requestSerializer: JSONParameterSerializer()){
+//            response in
+//            if let err = response.error{
+//                print("error: \(err.localizedDescription)")
+//                return
+//            }
+//            let jsondata = JSON(response.data)
+//            if jsondata["errNo"] == 200
+//            {
+//                print("更新成功C")
+//            }
+//
+//
+//        }
         
 //            let alertController = UIAlertController(title: "上传成功！",
 //                                                    message: nil, preferredStyle: .alert)
