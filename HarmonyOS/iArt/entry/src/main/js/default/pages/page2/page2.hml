@@ -1,0 +1,15 @@
+<div id="wrapper">
+    <stack id="stack16">
+        <image id="image17" src="common/images/background.png"/>
+        <div id="div22">
+            <text id="text23">没有一个孩子，会成为一座孤岛
+</text>
+            <input id="input30" value="电话号码"/>
+            <input id="input31" value="密码"/>
+            <stack id="stack37">
+                <button id="button38" value="登录" onclick="switchPage"></button>
+                <button id="button40" value="注册" onclick="routerzhuce"></button>
+            </stack>
+        </div>
+    </stack>
+</div>

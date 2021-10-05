@@ -1,0 +1,17 @@
+<div id="wrapper">
+    <stack id="stack3">
+        <image id="image4" src="common/images/zhuce.png"/>
+        <button id="button5" focusable="true" value="﹤Back" onclick="routerdenglu"></button>
+        <div id="div7">
+            <text id="text9">请在下方注册账户</text>
+            <input id="input8" value="电话号码"/>
+            <input id="input10" value="用户名"/>
+            <input id="input11" value="请输入你的身份1为孩子为家长3为医生"/>
+            <input id="input12" value="请输入年龄"/>
+            <input id="input13" value="请输入性别1为男,2为女"/>
+            <input id="input26" value="请输入密码"/>
+            <input id="input15" value="请再次确认密码"/>
+            <button id="button16" value="注册" @click="routerdenglu"></button>
+        </div>
+    </stack>
+</div>

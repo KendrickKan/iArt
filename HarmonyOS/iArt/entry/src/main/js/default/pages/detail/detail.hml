@@ -1,0 +1,17 @@
+<div id="wrapper">
+    <image id="image2" src="{{picAdress}}"/>
+    <div id="div3">
+        <input id="input18"/>
+        <button id="button5" value="提交" onclick="submiteAns"></button>
+    </div>
+    <list id="list6">
+        <list-item id="list-item7" for="{{detList}}">
+            <text id="text8">{{$item.word}}</text>
+            <rating id="rating12" rating="{{$item.value}}">{{$item.value}}</rating>
+        </list-item>
+    </list>
+    <div id="div9">
+        <text id="text10">家长最新回复</text>
+        <text id="text11">{{parentAns}}</text>
+    </div>
+</div>

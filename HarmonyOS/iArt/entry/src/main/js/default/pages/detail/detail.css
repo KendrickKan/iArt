@@ -1,0 +1,77 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-image: url("common/images/snowmoutain.png");
+}
+
+#image2 {
+    width: 360px;
+    height: 293.6636794939378px;
+}
+
+#div3 {
+    width: 100%;
+    height: 55.55799890049478px;
+    top: 10px;
+}
+
+#input18 {
+    width: 100%;
+    height: 47.30700179533214px;
+}
+
+#button5 {
+    width: 40%;
+    height: 45px;
+}
+
+#list6 {
+    top: 10px;
+    width: 359.69952556668426px;
+    height: 256.6158705359437px;
+}
+
+#list-item7 {
+    width: 30px;
+    height: 80px;
+}
+
+#text8 {
+    font-style: normal;
+    color: rgba(0,0,0,0.7);
+    font-weight: bolder;
+    width: 136.7608837771661px;
+    height: 89.20927780706378px;
+    left: 20px;
+}
+
+#rating12 {
+    width: 100px;
+    height: 70.34482758620689px;
+    left: 40px;
+}
+
+#div9 {
+    width: 100%;
+    height: 92.45189664650908px;
+    top: 0;
+}
+
+#text10 {
+    color: rgba(0,0,0,0.7);
+    width: 128.30126443100602px;
+    height: 86.6025288620121px;
+    font-weight: bolder;
+    left: 20px;
+}
+
+#text11 {
+    width: 213.2050577240242px;
+    height: 85.31610775151181px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    font-weight: bold;
+    left: 40px;
+}
+

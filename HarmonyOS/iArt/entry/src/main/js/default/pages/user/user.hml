@@ -1,0 +1,11 @@
+<div id="wrapper">
+    <div id="div4">
+        <image id="image7" src="common/images/VCG25i2031800.jpg" onclick="routerLogic"/>
+        <image id="image6" src="common/images/icon.png"/>
+        <list id="list7">
+            <list-item id="list-item10" for="{{userInflist}}">
+                <input id="input11" name="{{$item.value}}" value="{{$item.text}} {{$item.value}} "/>
+            </list-item>
+        </list>
+    </div>
+</div>

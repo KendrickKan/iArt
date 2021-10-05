@@ -1,0 +1,42 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+#div11 {
+    width: 100%;
+    height: 50px;
+    background-image: url("common/images/snowmoutain.png");
+}
+
+#image12 {
+    width: 50.658935160780175px;
+    height: 111.10173958882446px;
+    margin-left: 5px;
+}
+
+#image13 {
+    width: 56.82656826568265px;
+    height: 100px;
+    margin-left: 240px;
+}
+
+#list6 {
+    width: 360px;
+    height: 780.3321033210332px;
+    background-image: url("common/images/snowmoutain.png");
+}
+
+#list-item14 {
+    width: 30px;
+    height: 200px;
+}
+
+#image15 {
+    width: 342.4384659416142px;
+    height: 211.17344018317115px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+

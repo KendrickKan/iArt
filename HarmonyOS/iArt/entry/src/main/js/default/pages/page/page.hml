@@ -1,0 +1,11 @@
+<div id="wrapper">
+    <div id="div11">
+        <image id="image12" src="common/images/VCG25i2031800.jpg" onclick="routerLogic"/>
+        <image id="image13" src="common/images/VCG25i2031734.jpg" onclick="routerUser"/>
+    </div>
+    <list id="list6">
+        <list-item id="list-item14" for="{{picList}}">
+            <image id="image15" onclick="routerDetail($item.uid)" src="{{$item.img}}"/>
+        </list-item>
+    </list>
+</div>
