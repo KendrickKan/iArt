@@ -68,8 +68,27 @@ class ParentView: UIViewController {
         self.view.addSubview(aboutBtn)
         aboutBtn.addTarget(self, action: #selector(turnToAboutMe), for: .touchUpInside)
         
+        let PickBtn = UIButton(frame: CGRect(x: 100, y: 800, width: 65, height: 65))
+        PickBtn.setBackgroundImage(UIImage(named: "pickbtn"), for: UIControl.State.normal)
+        PickBtn.layer.masksToBounds = true
+        PickBtn.layer.cornerRadius = 25
+        self.view.addSubview(PickBtn)
+        //PickBtn.addTarget(self, action: #selector(turnToCommunity), for: .touchUpInside)
+        
+        let CommunityBtn = UIButton(frame: CGRect(x: 230, y: 780, width:100, height: 100))
+        CommunityBtn.setBackgroundImage(UIImage(named: "communitybtn"), for: UIControl.State.normal)
+        CommunityBtn.layer.masksToBounds = true
+        CommunityBtn.layer.cornerRadius = 25
+        self.view.addSubview(CommunityBtn)
+        CommunityBtn.addTarget(self, action: #selector(turnToCommunity), for: .touchUpInside)
         
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func turnToCommunity(){
+        let con = CommunityView()
+        self.navigationController?.pushViewController(con, animated: true)
+        
     }
     
     @objc func turnToAboutMe(){
