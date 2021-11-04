@@ -84,7 +84,10 @@ class ViewController: UIViewController,UITextFieldDelegate{
         loginbuttonp.layer.cornerRadius = 25
         loginbuttonp.layer.masksToBounds = true
         self.view.addSubview(loginbuttonp)
-        loginbuttonp.addTarget(self, action: #selector(anotherp), for: .touchUpInside)
+        //跳转到社区
+        loginbuttonp.addTarget(self, action: #selector(turnToCommunity), for: .touchUpInside)
+        //跳转到主页
+        //loginbuttonp.addTarget(self, action: #selector(anotherp), for: .touchUpInside)
         
 //        let loginbuttond = UIButton(frame: CGRect(x: 160, y: 575, width: 100, height: 38))
 //        loginbuttond.backgroundColor = UIColor.systemRed
@@ -148,6 +151,12 @@ class ViewController: UIViewController,UITextFieldDelegate{
 //
 //        }
 //    }
+    
+    @objc func turnToCommunity(){
+        let con = CommunityView()
+        self.navigationController?.pushViewController(con, animated: true)
+        
+    }
     
     @objc func anotherp() {
         

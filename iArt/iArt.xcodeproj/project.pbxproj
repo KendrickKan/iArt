@@ -35,6 +35,7 @@
 		37AB3A992620BAFC003976BD /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB3A872620BABC003976BD /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37FE8CE92625CFC700F3F593 /* AboutMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE8CE82625CFC700F3F593 /* AboutMeView.swift */; };
 		4110135B271A03FD00DECE1B /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4110135A271A03FD00DECE1B /* CommunityView.swift */; };
+		41D6641C272D6F9900029AEB /* WeeklyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D6641B272D6F9900029AEB /* WeeklyReportView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		37AB3A7B2620BABC003976BD /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		37FE8CE82625CFC700F3F593 /* AboutMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeView.swift; sourceTree = "<group>"; };
 		4110135A271A03FD00DECE1B /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		41D6641B272D6F9900029AEB /* WeeklyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyReportView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				37040E0F2624973700DF2428 /* GlobalFile.swift */,
 				37FE8CE82625CFC700F3F593 /* AboutMeView.swift */,
 				4110135A271A03FD00DECE1B /* CommunityView.swift */,
+				41D6641B272D6F9900029AEB /* WeeklyReportView.swift */,
 			);
 			path = iArt;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				04CB18F725B9766900F74C19 /* WorksController.swift in Sources */,
 				37040E102624973700DF2428 /* GlobalFile.swift in Sources */,
 				4110135B271A03FD00DECE1B /* CommunityView.swift in Sources */,
+				41D6641C272D6F9900029AEB /* WeeklyReportView.swift in Sources */,
 				37AB3A3D26208BC5003976BD /* ChildrenView.swift in Sources */,
 				0461A1CB25ADAAF600CCC868 /* SceneDelegate.swift in Sources */,
 				04CB190725B9C7F400F74C19 /* InformationViewController.swift in Sources */,
@@ -705,7 +709,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sjds.iart;
+				PRODUCT_BUNDLE_IDENTIFIER = kendrick.iart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iArt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -727,7 +731,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sjds.iart;
+				PRODUCT_BUNDLE_IDENTIFIER = kendrick.iart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iArt-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
