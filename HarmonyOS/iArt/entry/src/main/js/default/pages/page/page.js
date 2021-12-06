@@ -8,7 +8,7 @@ export default {
     //const app = getApp(),
     data: {
         userId: undefined,
-         clickedId: 0,
+        clickedId: 0,
         picList: [{
                 title: 'name1',
                 uid: 0,
@@ -28,7 +28,6 @@ export default {
         },
         ],
     },
-
     routerUser() {
         var that = this;
         router.push ({
@@ -46,6 +45,7 @@ export default {
             uri:'pages/detail/detail', // 指定要跳转的页面
             //console.log(id);
             params: {
+                userId: this.userId,
                 picNum: id,
                 picAdress: this.picList[id].img,
             },
@@ -54,12 +54,11 @@ export default {
 
     routerLogic(){
         router.push ({
-            uri:'pages/page/page', // 指定要跳转的页面
+            uri:'pages/page/page',
+            params:{
+                userId: this.userId,
+            },
         })
     },
-    getId(){ //有大问题
-        console.log('getid:' + this.clickedId);
-      return this.clickedId;
 
-    },
 }

@@ -24,6 +24,7 @@
 #button5 {
     width: 40%;
     height: 45px;
+    font-size: 25px;
 }
 
 #list6 {
@@ -41,15 +42,17 @@
     font-style: normal;
     color: rgba(0,0,0,0.7);
     font-weight: bolder;
-    width: 136.7608837771661px;
-    height: 89.20927780706378px;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
     left: 20px;
 }
 
 #rating12 {
-    width: 100px;
-    height: 70.34482758620689px;
-    left: 40px;
+    width: 60%;
+    height: 60%;
+    left: 20px;
+    top: 10px;
 }
 
 #div9 {
@@ -60,9 +63,10 @@
 
 #text10 {
     color: rgba(0,0,0,0.7);
-    width: 128.30126443100602px;
-    height: 86.6025288620121px;
+    width: 100px;
+    height: 100px;
     font-weight: bolder;
+    font-size: 25px;
     left: 20px;
 }
 
@@ -73,5 +77,6 @@
     color: rgba(0,0,0,0.7);
     font-weight: bold;
     left: 40px;
+    font-size: 25px;
 }
 

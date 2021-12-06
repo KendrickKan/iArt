@@ -7,7 +7,7 @@
     <list id="list6">
         <list-item id="list-item7" for="{{detList}}">
             <text id="text8">{{$item.word}}</text>
-            <rating id="rating12" rating="{{$item.value}}">{{$item.value}}</rating>
+            <rating id="rating12" rating="{{$item.value}}"></rating>
         </list-item>
     </list>
     <div id="div9">
